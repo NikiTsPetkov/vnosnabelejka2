@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Вносна бележка</title>
+    <style type="text/css">
+		@media print
+		{    
+			.no-print
+			{
+			display: none !important;
+			}
+		}
+		#total{
+			position: absolute;
+			width: 100px;
+			height: 20px;
+			margin-left: -200px;
+			margin-top: 185px;
+			font-size: 110%;
+		}
+    </style>
+  </head>
+  <body>
+    <canvas id="myCanvas" width="640" height="330" style="border:1px solid #000000;">
+		Your browser does not support the HTML5 canvas tag.
+	</canvas>
+	<input type="text" id="total" placeholder="xxxxx.xx" autofocus/>
+	<button class="no-print" onclick="myFunction()">с думи</button>
+	<!--[if IE]><script type="text/javascript" src="excanvas.js"></script><![endif]-->
+	<script src="canvas1.js"></script>
+  </body>
+</html>
